@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<style>
+			.tabs-header {
+				overflow: hidden;
+				background: transparent;
+				position: relative;
+			}
+			
+			.tabs-wrap {
+				background: transparent;
+				position: relative;
+				padding: 0;
+				padding-top: 1px;
+				display: inline-block;
+			}
+			
+			.tabs-header ul {
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.tabs {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				padding-left: 8px;
+				font-size: 12px;
+			}
+			
+			.tabs li.tabs-selected {
+				border: 1px solid #ccc;
+				border-bottom: 0;
+			}
+			
+			.tabs li {
+				float: left;
+				margin-right: 4px;
+				margin-bottom: -1px;
+				padding: 0;
+				position: relative;
+				border: 0;
+				border-bottom: 0;
+				text-align: center;
+				white-space: nowrap;
+				cursor: pointer;
+				color: #369;
+				list-style-type: none;
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			body {
+				background-color: #000;
+				width: 798px;
+				height: 570px;
+			}
+			
+			.tabs-wrap {
+				width: 50%;
+				margin-left: 0px;
+				height: 30px;
+				line-height: 30px;
+				padding: 0;
+				/* margin-top: 0px; */
+				margin-left: 0px;
+				margin-bottom: 0px;
+				/* display: inline; */
+			}
+			
+			.div-right-show {
+				width: 50%;
+				float: right;
+				height: 30px;
+				line-height: 30px;
+				background-color: #1b1919;
+				padding: 0;
+				margin-top: 0px;
+				margin-left: 0px;
+				margin-bottom: 0px;
+				display: inline;
+			}
+			
+			.tab-li-div div {
+				float: left;
+				margin-right: 4px;
+				margin-bottom: -1px;
+				padding: 0;
+				position: relative;
+				border: 0;
+				border-bottom: 0;
+				text-align: center;
+				white-space: nowrap;
+				cursor: pointer;
+				color: #369;
+				list-style-type: none;
+				font-size: 12px;
+				padding-left: 5px;
+				line-height: 30px;
+				height: 30px;
+			}
+			
+			.div-show-bows {
+				width: 798px;
+				height: 570px;
+				padding: 0;
+				margin-top: 0px;
+				margin-left: 0px;
+			}
+			
+			li.div-ul-li-right {
+				width: 395px;
+				display: inline-block;
+				height: 267px;
+				background-color: #655b5b;
+			}
+			
+			li.div-ul-li-left {
+				width: 395px;
+				display: inline-block;
+				height: 267px;
+				background-color: #2f1b1b;
+			}
+			
+			.div-show-bows ul {
+				-webkit-margin-before: 0em;
+				-webkit-margin-after: 0em;
+				-webkit-padding-start: 0px;
+				/* margin-left: 0px; */
+				clear: both;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.div-right-show li {
+				display: inline-block;
+			}
+			
+			form#form1 {
+				width: 798px;
+				height: 570px;
+			}
+			
+			.div-right-show ul {
+				-webkit-margin-before: 0em;
+				-webkit-margin-after: 0em;
+				-webkit-padding-start: 0px;
+				margin: 0;
+			}
+			
+			.tabs-wrap ul {
+				-webkit-margin-before: 0em;
+				-webkit-margin-after: 0em;
+				-webkit-padding-start: 0px;
+				margin: 0;
+				padding: 0;
+			}
+			
+			span.div-li-span {
+				color: #fff;
+			}
+			
+			.div-right-show-right {
+				display: inline-block;
+				float: right;
+				padding-right: 10px;
+				height: 30px;
+			}
+			
+			.div-right-show-left {
+				display: inline-block;
+				height: 30px;
+			}
+			
+			.font-color-white {
+				color: #fff;
+			}
+			
+			.font-color-green {
+				color: #3fce52;
+			}
+			
+			.clear {
+				clear: both;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form id="form1">
+			<div class="tabs-wrap">
+				<ul class="tabs" ">
+					<li class="tab-li-div" id="reportLink">
+						<div>
+							通道1
+						</div>
+					</li>
+
+					<li class="tab-li-div">
+						<div>
+							通道2
+						</div>
+					</li>
+					<li class="tab-li-div">
+						<div>
+							通道3
+						</div>
+					</li>
+					<li class="tab-li-div">
+						<div>
+							通道4
+						</div>
+					</li>
+
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="div-right-show">
+				<div class="div-right-show-left">
+					<ul>
+						<li class="tab-li-div">
+							<div class="div-li-img">
+								<img src="images/checked.png" /></div>
+							<div><span class="font-color-white">I端
+        </span>
+							</div>
+						</li>
+						<li class="tab-li-div">
+							<div class="div-li-img">
+								<img src="images/unchecked.png" /></div>
+							<div><span class="font-color-white">II端
+        </span>
+							</div>
+						</li>
+
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="div-right-show-right">
+					<ul>
+						<li class="tab-li-div">
+							<div>
+								<span class="font-color-white">3G信号：</span><span class="font-color-green">强[26]</span>
+							</div>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+
+			</div>
+			<div class="div-show-bows">
+				<ul>
+					<li class="div-ul-li-left"></li>
+					<li class="div-ul-li-right"></li>
+					<li class="div-ul-li-left"></li>
+					<li class="div-ul-li-right"></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</form>
+	</body>
+
+</html>
